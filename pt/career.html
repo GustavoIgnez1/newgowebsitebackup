@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="{{ locale }}">
+
+<head>
+    {% include "partials/analytics.html" %}
+    
+    <meta charset="utf-8" />
+    <title>{{ career[locale].title }}</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta itemprop="name" content="{{ career[locale].title }}" />
+    <meta property="og:title" content="{{ career[locale].title }}" />
+    <meta name="twitter:title" content="{{ career[locale].title }}" />
+    <meta property="og:url" content="https://newgo.com.br/{{ locale }}/contact" />
+
+    {% include "partials/meta.html" %}
+    {% include "partials/css.html" %}
+    {% include "partials/base-js.html" %}
+</head>
+
+<body>
+    {% include "partials/navbar.html" %}
+
+    <!-- Hero Start -->
+    <section class="bg-half-170 d-table w-100" style="background: url('/images/bg/career.webp') 0 -70px; background-size: cover">
+        <div class="bg-overlay bg-gradient-overlay"></div>
+        <div class="container">
+            <div class="row mt-5 justify-content-center">
+                <div class="col-12">
+                    <div class="title-heading text-center">
+                        <small class="text-white-50 mb-1 fw-medium text-uppercase mx-auto">{{
+                            career[locale].banner.title }}</small>
+                        <h5 class="heading fw-semibold mb-0 page-heading text-white title-dark">{{
+                            career[locale].banner.subTitle }}</h5>
+                    </div>
+                </div>
+                <!--end col-->
+            </div>
+            <!--end row-->
+
+            <div class="position-middle-bottom">
+                <nav aria-label="breadcrumb" class="d-block">
+                    <ul class="breadcrumb breadcrumb-muted mb-0 p-0">
+                        <li class="breadcrumb-item"><a href="/{{ locale }}/index.html" title="{{ career[locale].links.home.title }}">{{
+                                career[locale].breadcrumb.previous }}</a></li>
+                        <li class="breadcrumb-item active" aria-current="page">{{ career[locale].breadcrumb.current }}
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+        <!--end container-->
+    </section>
+    <!--end section-->
+    <!-- Hero End -->
+
+    <section class="section">
+        <div class="container mt-10 mt-60">
+            <div class="row align-items-center">
+                <div class="col-lg-5 col-md-6">
+                    <img src="/images/career/career.webp" class="img-fluid rounded shadow" alt="{{ career[locale].content.image.alt }}">
+                </div><!--end col-->
+
+                <div class="col-lg-7 col-md-6 mt-4 mt-sm-0 pt-2 pt-sm-0">
+                    <div class="section-title ms-lg-5">
+                        <h4 class="title fw-semibold mb-3">{{ career[locale].content.title }}</h4>
+                        <p class="text-muted para-desc mb-0">{{ career[locale].content.desc }}</p>
+                    
+                        <div class="row mt-4">
+                            <div class="col-lg-6 col-12">
+                                <ul class="mb-0 list-unstyled">
+                                    <li class="mb-0"><span class="text-primary h4 me-2"><i class="mdi mdi-checkbox-marked-circle-outline"></i></span> {{ career[locale].content.benefits.benefit1 }} </li>
+                                    <li class="mb-0"><span class="text-primary h4 me-2"><i class="mdi mdi-checkbox-marked-circle-outline"></i></span> {{ career[locale].content.benefits.benefit2 }} </li>
+                                    <li class="mb-0"><span class="text-primary h4 me-2"><i class="mdi mdi-checkbox-marked-circle-outline"></i></span> {{ career[locale].content.benefits.benefit3 }} </li>
+                                    <li class="mb-0"><span class="text-primary h4 me-2"><i class="mdi mdi-checkbox-marked-circle-outline"></i></span> {{ career[locale].content.benefits.benefit4 }} </li>
+                                    <li class="mb-0"><span class="text-primary h4 me-2"><i class="mdi mdi-checkbox-marked-circle-outline"></i></span> {{ career[locale].content.benefits.benefit5 }} </li>
+                                    <li class="mb-0"><span class="text-primary h4 me-2"><i class="mdi mdi-checkbox-marked-circle-outline"></i></span> {{ career[locale].content.benefits.benefit6 }} </li>
+                                </ul>
+                            </div><!--end col-->
+
+                            <div class="col-lg-6 col-12">
+                                <ul class="mb-0 list-unstyled">
+                                    <li class="mb-0"><span class="text-primary h4 me-2"><i class="mdi mdi-checkbox-marked-circle-outline"></i></span> {{ career[locale].content.benefits.benefit7 }} </li>
+                                    <li class="mb-0"><span class="text-primary h4 me-2"><i class="mdi mdi-checkbox-marked-circle-outline"></i></span> {{ career[locale].content.benefits.benefit8 }} </li>
+                                    <li class="mb-0"><span class="text-primary h4 me-2"><i class="mdi mdi-checkbox-marked-circle-outline"></i></span> {{ career[locale].content.benefits.benefit9 }} </li>
+                                    <li class="mb-0"><span class="text-primary h4 me-2"><i class="mdi mdi-checkbox-marked-circle-outline"></i></span> {{ career[locale].content.benefits.benefit10 }} </li>
+                                    <li class="mb-0"><span class="text-primary h4 me-2"><i class="mdi mdi-checkbox-marked-circle-outline"></i></span> {{ career[locale].content.benefits.benefit11 }} </li>
+                                    <li class="mb-0"><span class="text-primary h4 me-2"><i class="mdi mdi-checkbox-marked-circle-outline"></i></span> {{ career[locale].content.benefits.benefit12 }} </li>
+                                </ul>
+                            </div><!--end col-->
+                        </div><!--end row-->
+
+                        <p class="text-muted para-desc mt-4 mb-0">{{ career[locale].content.finalParagraph.text }} <a href="{{ career[locale].content.finalParagraph.email.href }}" class="text-foot"
+                            title="{{ career[locale].content.finalParagraph.email.title }}">{{ career[locale].content.finalParagraph.email.address }}</a></p>
+                    </div>
+                </div><!--end col-->
+            </div><!--end row-->
+        </div><!--end container-->
+    </section>
+
+    {% include "partials/footer.html" %}
+</body>
+
+</html>

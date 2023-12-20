@@ -1,0 +1,106 @@
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+    <a href="https://api.whatsapp.com/send/?phone=5511932989996&text=Ol%C3%A1,%20tudo%20bem?%20Vim%20pelo%20site%20de%20voc%C3%AAs%20e%20gostaria%20de%20mais%20informa%C3%A7%C3%B5es%20sobre%20os%20servi%C3%A7os.%20Podem%20me%20auxiliar?&type=phone_number&app_absent=0" style="position:fixed;width:60px;height:60px;bottom:40px;right:40px;background-color:#25d366;color:#FFF;border-radius:50px;text-align:center;font-size:30px;box-shadow: 1px 1px 2px #888;
+      z-index:1000;" target="_blank">
+    <i style="margin-top:16px" class="fa fa-whatsapp"></i>
+    </a>
+
+    <!-- Footer Start -->
+    <footer class="footer bg-footer">
+      <div class="container">
+          <div class="row">
+              <div class="col-12">
+                  <div class="footer-py-60">
+                      <div class="row">
+                          <div class="col-lg-4 col-12 mb-0 mb-md-4 pb-0 pb-md-2">
+                              <a href="/{{ locale }}/index.html" class="logo-footer" title="{{ navbar[locale].home.title }}">
+                                  <img src="/images/logo-light.png" width="112" height="28" alt="">
+                              </a>
+                              <p class="mt-4">{{ footer[locale].text }}</p>
+                              <ul class="list-unstyled social-icon foot-social-icon mb-0 mt-4">
+                                  <li class="list-inline-item"><a
+                                          href="https://www.linkedin.com/company/newgotecnologia/" target="_blank"
+                                          class="rounded" title="{{ footer[locale].links.linkedin.title }}"><i class="mdi mdi-linkedin" title="Linkedin"></i></a></li>
+                                  <li class="list-inline-item"><a href="https://www.facebook.com/newgotecnologia"
+                                          target="_blank" class="rounded" title="{{ footer[locale].links.facebook.title }}"><i class="mdi mdi-facebook align-middle"
+                                              title="facebook"></i></a></li>
+                                  <li class="list-inline-item"><a href="https://www.instagram.com/newgotecnologia/"
+                                          target="_blank" class="rounded" title="{{ footer[locale].links.instagram.title }}"><i class="mdi mdi-instagram align-middle"
+                                              title="instagram"></i></a></li>
+                                  <li class="list-inline-item"><a href="mailto:contato@newgo.com.br"
+                                          title="{{ footer[locale].email.title }}"
+                                          class="rounded"><i class="mdi mdi-email-outline fs-5"></i></a></li>
+                              </ul>
+                              <!--end icon-->
+                          </div>
+                          <!--end col-->
+
+                          <div class="col-lg-2 col-md-4 col-12 mt-4 mt-sm-4 pt-2 pt-sm-0">
+                              <h2 class="footer-head">{{ footer[locale].fastAccess }}</h2>
+                              <ul class="list-unstyled footer-list mt-4">
+                                  <li><a href="/{{ locale }}/index.html" class="text-foot" title="{{ footer[locale].links.home.title }}"><i
+                                              class="mdi mdi-chevron-right me-1"></i> {{ footer[locale].links.home.label }}</a></li>
+                                  <li><a href="/{{ locale }}/index.html#showClients" class="text-foot" title="{{ footer[locale].links.customers.title }}"><i
+                                              class="mdi mdi-chevron-right me-1"></i> {{ footer[locale].links.customers.label }}</a></li>
+                                  <li><a href="/{{ locale }}/index.html#services" class="text-foot" title="{{ footer[locale].links.services.title }}"><i
+                                              class="mdi mdi-chevron-right me-1"></i> {{ footer[locale].links.services.label }}</a></li>
+                                  <li><a href="/{{ locale }}/cases/index.html" class="text-foot" title="{{ footer[locale].links.cases.title }}"><i
+                                              class="mdi mdi-chevron-right me-1"></i> {{ footer[locale].links.cases.label }}</a></li>
+                                  <li><a href="/{{ locale }}/career/index.html" class="text-foot" title="{{ footer[locale].links.career.title }}"><i
+                                              class="mdi mdi-chevron-right me-1"></i> {{ footer[locale].links.career.label }}</a></li>
+                                  <li><a href="/{{ locale }}/contact/index.html" class="text-foot" title="{{ footer[locale].links.contact.title }}"><i
+                                              class="mdi mdi-chevron-right me-1"></i> {{ footer[locale].links.contact.label }}</a></li>
+                              </ul>
+                          </div>
+                          <!--end col-->
+
+                          <div class="col-lg-6 col-md-4 col-12 mt-0 mt-sm-4 pt-2 pt-sm-0">
+                              <h2 class="footer-head">{{ footer[locale].contactUs.title }}</h2>
+                              <ul class="list-unstyled footer-list mt-4">
+                                  <li>{{ footer[locale].contactUs.phone }}</li>
+                                  <li>{{ footer[locale].contactUs.email }}</li>
+                                  <li>{{ footer[locale].contactUs.address }}</li>
+                              </ul>
+                          </div>
+                          <!--end col-->
+                      </div>
+                      <!--end row-->
+                  </div>
+              </div>
+              <!--end col-->
+          </div>
+          <!--end row-->
+      </div>
+      <!--end container-->
+
+      <div class="footer-py-30 footer-bar bg-footer">
+          <div class="container">
+              <div class="row align-items-center">
+                  <div class="col">
+                      <div class="text-center">
+                          <p class="mb-0 text-muted">
+                              <script>document.write(new Date().getFullYear())</script> {{ footer[locale].allRightsReserved }}
+                          </p>
+                      </div>
+                  </div>
+                  <!--end col-->
+              </div>
+              <!--end row-->
+          </div>
+          <!--end container-->
+      </div>
+  </footer>
+  <!--end footer-->
+  <!-- End -->
+
+  <!-- Back to top -->
+  <ul class="text-center list-unstyled switcher-button mb-0 position-fixed" style="top: 20%; left: 10px; z-index: 2;">
+      <li class="d-grid"><span href="javascript:void(0)" class="btn btn-icon rounded-circle btn-dark dark-version t-dark clickable-area"
+              onclick="setTheme('style-dark')" title="{{ footer[locale].links.changeTheme.title }}"> <i class="mdi mdi-brightness-4 fs-5"></i> </span></li>
+      <li class="d-grid"><span href="javascript:void(0)" title="{{ footer[locale].links.changeTheme.title }}"
+              class="btn btn-icon rounded-circle btn-dark light-version t-light clickable-area" onclick="setTheme('style')"> <i
+                  class="mdi mdi-brightness-6 fs-5"></i> </span></li>
+      <li class="d-grid"><a href="/{{ locale }}/contact/index.html" class="btn btn-icon rounded-circle btn-primary mt-2" title="{{ footer[locale].links.contact.title }}"><i class="mdi mdi-email-outline fs-5"></i></a>
+      </li>
+  </ul>
+  <span href="javascript:void(0)" onclick="topFunction()" id="back-to-top" class="back-to-top rounded-pill clickable-area"><i class="mdi mdi-arrow-up"></i></span>
+  <!-- Back to top -->

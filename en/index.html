@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="{{ locale }}">
+
+<head>
+    {% include "partials/analytics.html" %}
+    <meta charset="utf-8" />
+    <title>{{ index[locale].title }}</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta itemprop="name" content="{{ index[locale].title }}" />
+    <meta property="og:title" content="{{ index[locale].title }}" />
+    <meta name="twitter:title" content="{{ index[locale].title }}" />
+    <meta property="og:url" content="https://newgo.com.br/{{ locale }}" />
+
+    {% include "partials/meta.html" %}
+    {% include "partials/css.html" %}
+    {% include "partials/base-js.html" %}
+</head>
+
+<body>
+    {% include "partials/navbar.html" %}
+
+    <!-- Hero Start -->
+    <section class="bg-half-260 d-table w-100"
+        style="background: url('/images/bg/programmer-02.webp') top; background-size: cover">
+        <div class="bg-overlay bg-dark bg-white-dark opacity-5"></div>
+        <div class="container">
+            <div class="row mt-5 justify-content-center">
+                <div class="col-12">
+                    <div class="title-heading text-center">
+                        <p class="display-3 text-white title-dark fw-semibold mb-0">{{
+                            index[locale].banner.highlight.title }}</p>
+
+                        <p class="mt-5 text-white">{{ index[locale].banner.highlight.subTitle.part1 }} <a
+                                class="navbar_highlight" href="#services"
+                                title="{{ index[locale].links.services.title }}"><strong>{{
+                                    index[locale].banner.highlight.subTitle.part2 }}</strong></a></p>
+                    </div>
+                </div>
+                <!--end col-->
+            </div>
+            <!--end row-->
+        </div>
+        <!--end container-->
+        <div class="home-shape-arrow">
+            <a href="#services" class="mouse-down" title="{{ index[locale].links.services.title }}"><i
+                    class="mdi mdi-arrow-down arrow-icon text-dark h5 shadow-md"></i></a>
+        </div>
+        <span id="showClients"></span>
+    </section>
+    <!--end section-->
+    <!-- Hero End -->
+
+    <!-- Shape Start -->
+    <div class="position-relative">
+        <div class="shape overflow-hidden text-light">
+            <svg viewBox="0 0 2880 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M0 48H1437.5H2880V0H2160C1442.5 52 720 0 720 0H0V48Z" fill="currentColor"></path>
+            </svg>
+        </div>
+    </div>
+    <!--Shape End-->
+
+    <!-- Start Clients -->
+    <section class="bg-light">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-lg-2 col-md-2 col-6 text-center py-md-4 py-2">
+                    <img src="/images/client/gol.svg" width="164" height="93"
+                        coloredsrc="/images/client/gol-colored.svg" class="img-fluid client-logo"
+                        alt="{{ index[locale].clients.gol }}">
+                </div>
+                <!--end col-->
+
+                <div class="col-lg-2 col-md-2 col-6 text-center py-md-4 py-2">
+                    <img src="/images/client/smiles.svg" width="164" height="93"
+                        coloredsrc="/images/client/smiles-colored.svg" class="img-fluid client-logo"
+                        alt="{{ index[locale].clients.smiles }}">
+                </div>
+                <!--end col-->
+
+                <div class="col-lg-2 col-md-2 col-6 text-center py-md-4 py-2">
+                    <img src="/images/client/pagol.svg" width="164" height="93"
+                        coloredsrc="/images/client/pagol-colored.svg" class="img-fluid client-logo"
+                        alt="{{ index[locale].clients.pagol }}">
+                </div>
+                <!--end col-->
+
+                <div class="col-lg-2 col-md-2 col-6 text-center py-md-4 py-2">
+                    <img src="/images/client/altice-labs.png" width="164" height="93"
+                        coloredsrc="/images/client/altice-labs-colored.png" class="img-fluid client-logo"
+                        alt="{{ index[locale].clients.alticeLabs }}">
+                </div>
+                <!--end col-->
+
+                <div class="col-lg-2 col-md-2 col-6 text-center py-md-4 py-2">
+                    <img src="/images/client/vivo.svg" width="164" height="93"
+                        coloredsrc="/images/client/vivo-colored.svg" class="img-fluid client-logo"
+                        alt="{{ index[locale].clients.vivo }}">
+                </div>
+                <!--end col-->
+
+                <div class="col-lg-2 col-md-2 col-6 text-center py-md-4 py-2">
+                    <img src="/images/client/oi.svg" width="164" height="93" coloredsrc="/images/client/oi-colored.svg"
+                        class="img-fluid client-logo" alt="{{ index[locale].clients.oi }}">
+                </div>
+                <!--end col-->
+
+                <div class="col-lg-2 col-md-2 col-6 text-center py-md-4 py-2">
+                    <img src="/images/client/fibrasil.png" width="164" height="93"
+                        coloredsrc="/images/client/fibrasil-colored.png" class="img-fluid client-logo"
+                        alt="{{ index[locale].clients.fibrasil }}">
+                </div>
+                <!--end col-->
+
+                <div class="col-lg-2 col-md-2 col-6 text-center py-md-4 py-2">
+                    <img src="/images/client/presenttech.png" width="164" height="93"
+                        coloredsrc="/images/client/presenttech-colored.png" class="img-fluid client-logo"
+                        alt="{{ index[locale].clients.present }}">
+                </div>
+
+                <div class="col-lg-2 col-md-2 col-6 text-center py-md-4 py-2">
+                    <img src="/images/client/omni.svg" width="164" height="93"
+                        coloredsrc="/images/client/omni-colored.svg" class="img-fluid client-logo"
+                        alt="{{ index[locale].clients.omni }}">
+                </div>
+
+                <div class="col-lg-2 col-md-2 col-6 text-center py-md-4 py-2">
+                    <img src="/images/client/appcargo.png" width="164" height="93"
+                        coloredsrc="/images/client/appcargo-colored.png" class="img-fluid client-logo"
+                        alt="{{ index[locale].clients.appcargo }}">
+                </div>
+
+                <div class="col-lg-2 col-md-2 col-6 text-center py-md-4 py-2">
+                    <img src="/images/client/prefeitura-guararema.png" width="164" height="93"
+                        coloredsrc="/images/client/prefeitura-guararema-colored.png" class="img-fluid client-logo"
+                        alt="{{ index[locale].clients.prefeituraGuararema }}">
+                </div>
+                <!--end col-->
+
+            </div>
+            <!--end row-->
+        </div>
+        <!--end container-->
+    </section>
+    <!--end section-->
+    <!-- End Clients -->
+
+    <!-- Start Features -->
+    <main id="services" class="section">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-12">
+                    <div class="section-title mb-4 pb-2 text-center">
+                        <h1 class="badge bg-soft-primary rounded-pill">{{ index[locale].services.highlight }}</h1>
+                        <h2 class="title mb-3 mt-2">{{ index[locale].services.ourServices }}</h2>
+                        <p class="para-desc mx-auto text-muted mb-0">{{ index[locale].services.description }}</p>
+                    </div>
+                </div>
+                <!--end col-->
+            </div>
+            <!--end row-->
+
+            <div class="row justify-content-center">
+                <div class="col-lg-10">
+                    <div class="row">
+                        <div class="col-md-6 mt-4 pt-2 d-flex align-content-stretch">
+                            <div
+                                class="features feature-primary rounded px-4 py-5 bg-white shadow border-0 d-flex align-items-center">
+                                <div class="fea-icon rounded-circle bg-soft">
+                                    <i class="mdi mdi-application"></i>
+                                </div>
+
+                                <div class="content flex-1 ms-3">
+                                    <h3 class="title h5 text-dark">{{ index[locale].services.softwareCompany.title
+                                        }}</h3>
+                                    <p class="text-muted mt-2 mb-0">{{
+                                        index[locale].services.softwareCompany.description }}</p>
+                                </div>
+                            </div>
+                        </div>
+                        <!--end col-->
+
+                        <div class="col-md-6 mt-4 pt-2 d-flex align-content-stretch">
+                            <div
+                                class="features feature-primary rounded px-4 py-5 bg-white shadow border-0 d-flex align-items-center">
+                                <div class="fea-icon rounded-circle bg-soft">
+                                    <i class="mdi mdi-account-multiple-plus"></i>
+                                </div>
+
+                                <div class="content flex-1 ms-3">
+                                    <h3 class="title h5 text-dark">{{ index[locale].services.outsourcing.title
+                                        }}</h3>
+                                    <p class="text-muted mt-2 mb-0">{{ index[locale].services.outsourcing.description }}
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <!--end col-->
+                    </div>
+                    <div class="row">
+                        <div class="col-md-6 mt-4 pt-2 d-flex align-content-stretch">
+                            <div
+                                class="features feature-primary rounded px-4 py-5 bg-white shadow border-0 d-flex align-items-center">
+                                <div class="fea-icon rounded-circle bg-soft">
+                                    <i class="mdi mdi-brain"></i>
+                                </div>
+
+                                <div class="content flex-1 ms-3">
+                                    <h3 class="title h5 text-dark">{{ index[locale].services.consultancy.title
+                                        }}</h3>
+                                    <p class="text-muted mt-2 mb-0">{{ index[locale].services.consultancy.description }}
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <!--end col-->
+
+                        <div class="col-md-6 mt-4 pt-2 d-flex align-content-stretch">
+                            <div
+                                class="features feature-primary rounded px-4 py-5 bg-white shadow border-0 d-flex align-items-center">
+                                <div class="fea-icon rounded-circle bg-soft">
+                                    <i class="mdi mdi-presentation"></i>
+                                </div>
+
+                                <div class="content flex-1 ms-3">
+                                    <h3 class="title h5 text-dark">{{ index[locale].services.training.title }}</h3>
+                                    <p class="text-muted mt-2 mb-0">{{ index[locale].services.training.description }}
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <!--end col-->
+                    </div>
+                </div>
+                <!--end col-->
+            </div>
+            <!--end row-->
+        </div>
+        <!--end container-->
+    </main>
+    <!--end section-->
+
+    <!-- Start -->
+    <section class="section">
+        <div class="bg-overlay bg-gradient-primary"></div>
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-12">
+                    <div class="section-title text-center">
+                        <h2 class="title text-white title-dark mb-3">{{ index[locale].whyChooseUs.title }}</h2>
+                        <p class="para-desc mx-auto text-white-50">{{ index[locale].whyChooseUs.subTitle.part1 }}
+                            <strong class="text-white">
+                                {{ index[locale].whyChooseUs.subTitle.part2 }}</strong> {{
+                            index[locale].whyChooseUs.subTitle.part3 }} <strong class="text-white">{{
+                                index[locale].whyChooseUs.subTitle.part4 }}</strong> {{ index[locale].whyChooseUs.subTitle.part5 }}.
+                        </p>
+
+                        <div class="mt-4 pt-2">
+                            <a href="/{{ locale }}/cases/index.html" class="btn btn-pills btn-primary" title="{{ index[locale].links.cases.title }}">{{ index[locale].whyChooseUs.knowOurCases }}</a>
+                        </div>
+                        <!--<div class="mt-4 pt-2">
+                            <a href="#" class="btn btn-pills btn-success">Conhecer método de trabalho</a>
+                        </div>-->
+                    </div>
+                </div>
+                <!--end col-->
+            </div>
+            <!--end row-->
+        </div>
+        <!--end container-->
+    </section>
+    <!--end section-->
+
+    {% include "partials/footer.html" %} 
+</body>
+
+</html>

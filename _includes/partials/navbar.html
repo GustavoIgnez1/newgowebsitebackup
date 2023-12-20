@@ -1,0 +1,63 @@
+<!-- Navbar Start -->
+<header id="topnav" class="defaultscroll sticky">
+    <div class="container">
+        <!-- Logo container-->
+        <a class="logo" href="/{{ locale }}/index.html" title="{{ navbar[locale].home.title }}">
+            <span class="logo-light-mode">
+                <img src="/images/logo-dark.png" class="l-dark" alt="{{ navbar[locale].newgo.alt }}" width="132" height="33">
+                <img src="/images/logo-light.png" class="l-light" alt="{{ navbar[locale].newgo.alt }}" width="132" height="33">
+            </span>
+            <img src="/images/logo-light.png" class="logo-dark-mode" alt="{{ navbar[locale].newgo.alt }}" width="132" height="33">
+        </a>
+        <!-- End Logo container-->
+        <div class="menu-extras" style="display: flex">
+            <div class="menu-item languages">
+                {%- for language in languages -%}
+                <a href="/{{ language.name }}/{{ page.url | slice: 4, 1000 }}index.html" class="sub-menu-item"
+                    title="{{ language.link.title }}"><img src="{{ language.link.image }}" class="language"
+                        alt="{{ language.link.alt }}" width="25" height="16" /></a>
+                {%- endfor -%}
+            </div>
+            <div class="menu-item">
+                <!-- Mobile menu toggle-->
+                <div class="navbar-toggle clickable-area" id="isToggle" onclick="toggleMenu()">
+                    <div class="lines">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div>
+                </div>
+                <!-- End mobile menu toggle-->
+            </div>
+        </div>
+        <!-- End Logo container -->
+
+        <div id="navigation">
+            <!-- Navigation Menu-->
+            <ul class="navigation-menu nav-light">
+                <li><a href="/{{ locale }}/index.html" class="sub-menu-item" title="{{ navbar[locale].home.title }}">{{
+                        navbar[locale].home.label }}</a></li>
+                <li><a href="/{{ locale }}/index.html#showClients" class="sub-menu-item"
+                        title="{{ navbar[locale].customers.title }}">{{ navbar[locale].customers.label }}</a></li>
+                <li><a href="/{{ locale }}/index.html#services" class="sub-menu-item"
+                        title="{{ navbar[locale].services.title }}">{{ navbar[locale].services.label }}</a></li>
+                <li><a href="/{{ locale }}/cases/index.html" class="sub-menu-item" title="{{ navbar[locale].cases.title }}">{{
+                        navbar[locale].cases.label }}</a></li>
+                <li><a href="/{{ locale }}/career/index.html" class="sub-menu-item" title="{{ navbar[locale].career.title }}">{{
+                        navbar[locale].career.label }}</a></li>
+                <li><a href="/{{ locale }}/contact/index.html" class="sub-menu-item" title="{{ navbar[locale].contact.title }}">{{
+                        navbar[locale].contact.label }}</a></li>
+                {%- for language in languages -%}
+                <li class="language-container"><a href="/{{ language.name }}/{{ page.url | slice: 4, 1000 }}index.html"
+                        class="sub-menu-item" title="{{ language.link.title }}"><img src="{{ language.link.image }}"
+                            class="language" alt="{{ language.link.alt }}" width="25" height="16" /></a></li>
+                {%- endfor -%}
+            </ul>
+            <!--end navigation menu-->
+        </div>
+        <!--end navigation-->
+    </div>
+    <!--end container-->
+</header>
+<!--end header-->
+<!-- Navbar End -->
